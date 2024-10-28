@@ -32,4 +32,13 @@
   aside .widget .widget-content p span {
     width: 50%;
   }
+  aside .widget .widget-content a {
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+  }
+  aside .mobilewidget {
+    display: flex;
+    justify-content: space-between;
+  }
 }
