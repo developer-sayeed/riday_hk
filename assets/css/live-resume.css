@@ -10356,6 +10356,7 @@ main .section-title {
   text-transform: uppercase;
   margin-bottom: 2.125rem;
 }
+
 main .section-subtitle {
   font-size: 12px;
   font-weight: 500;
@@ -10392,10 +10393,10 @@ main .time-line-item::before {
   display: block;
   position: absolute;
   height: 100%;
-  left: 5px;
+  left: 10px;
   transform: translateX(-50%);
   width: 1px;
-  background-color: #f3f3f3;
+  background-color: #0067f6;
 }
 main .time-line-item::after {
   content: "";
@@ -10403,8 +10404,8 @@ main .time-line-item::after {
   position: absolute;
   top: 0;
   left: 0px;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: #979797;
 }
@@ -10444,9 +10445,27 @@ main .time-line-item-content {
   line-height: 1.6;
   margin-bottom: 0;
 }
-main .services-section {
-  margin-bottom: 34px;
+main .sekill-section {
+  padding: 20px 0;
+  
 }
+main .sekill-section  ul li{
+  padding: 5px 0 5px 20px;
+  list-style: none;
+  position: relative;
+  
+}
+main .sekill-section  ul li::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 13px;
+  left: 0px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #0067f6;
+ }
 main .certificate-section {
   margin-bottom: 34px;
 }
