@@ -10317,7 +10317,7 @@ aside {
   }
   /* Custom scrollbar styles */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 2px;
 }
 
 ::-webkit-scrollbar-track {
