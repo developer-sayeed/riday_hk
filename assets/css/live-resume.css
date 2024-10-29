@@ -10413,6 +10413,12 @@ main .time-line-item-content {
 main .services-section {
   margin-bottom: 34px;
 }
+main .certificate-section {
+  margin-bottom: 34px;
+}
+main .certificate-section img {
+  max-width: 100%;
+}
 main .service-card {
   padding-top: 11px;
   padding-bottom: 11px;
@@ -10421,6 +10427,93 @@ main .service-card:first-child,
 main .service-card:nth-child(3) {
   border-right: 1px solid #f3f3f3;
 }
+
+/* Slider  Start */
+
+
+
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+  width: 100%;
+  cursor: pointer;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Fullscreen Modal */
+.fullscreen-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.fullscreen-modal img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.download {
+  position: absolute;
+  bottom: 30px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Slider  End */
+
+
+
+
 @media (max-width: 991px) {
   main .service-card:first-child,
   main .service-card:nth-child(3) {
