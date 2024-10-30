@@ -1,4 +1,13 @@
 @media only screen and (max-width: 500px) {
+  body {
+    padding-top: 15px;
+  }
+  aside .profile-img-wrapper img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
   aside .profile-name {
     font-size: 30px;
     line-height: 40px;
@@ -31,6 +40,8 @@
   }
   aside .widget .widget-content p span {
     width: 50%;
+    display: flex;
+    justify-content: space-between;
   }
   aside .widget .widget-content a {
     display: block;

@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v4.4.1 (https://getbootstrap.com/)
- * Copyright 2011-2019 The Bootstrap Authors
- * Copyright 2011-2019 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -10065,6 +10060,46 @@ aside .profile-designation {
   line-height: 20px;
   font-weight: 500;
   margin-bottom: 10px;
+}
+
+
+
+.social-links {
+  position: relative;
+}
+
+.social-link {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px; /* Adjust spacing as needed */
+  color: #333; /* Icon color */
+  text-decoration: none;
+}
+
+.social-link:hover {
+  color: #007bff; /* Change color on hover (optional) */
+}
+
+.social-link::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%; /* Position above the icon */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333; /* Tooltip background color */
+  color: #fff; /* Tooltip text color */
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap; /* Prevent line breaks */
+  visibility: hidden; /* Hidden by default */
+  opacity: 0; /* Transparent by default */
+  transition: opacity 0.3s; /* Smooth transition */
+  z-index: 10; /* Ensure tooltip is on top */
+}
+
+.social-link:hover::after {
+  visibility: visible; /* Show tooltip on hover */
+  opacity: 1; /* Fade in */
 }
 
 aside .social-links {
